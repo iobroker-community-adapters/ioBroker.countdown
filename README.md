@@ -31,7 +31,8 @@ The goal of the adapter is to provide you a possibility to run countdowns for fu
 
 ## Credits
 
-This adapter would not have been possible without the great work of @inbux (https://github.com/inbux), who created pre V1.x.x releases of this adapter.
+This adapter would not have been possible without the great work of @jack-blackson (https://github.com/jack-blackson)",
+who created pre V3.x.x releases of this adapter.
 
 ## Changelog
 
