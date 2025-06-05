@@ -29,7 +29,20 @@ The goal of the adapter is to provide you a possibility to run countdowns for fu
 * Possibility to add a script as a parameter and start it when countdown ends
 * Possibility to use plus and minus in addminutes and the other add functions
 
+## Credits
+
+This adapter would not have been possible without the great work of @inbux (https://github.com/inbux), who created pre V1.x.x releases of this adapter.
+
 ## Changelog
+
+<!--
+	Placeholder for the next version (at the beginning of the line):
+	### **WORK IN PROGRESS**
+-->
+### **WORK IN PROGRESS**
+* (mcm1957) Adapter has been migrated to iobroker-community-adapters organisation.
+* (mcm1957) Adapter requires node.js 20, js-controller 6.01 and admin 7.4.10 now.
+* (mcm1957) Dependencies have been updated.
 
 ### 2.3.0 (2024-09-20) 
 * (jack-blackson) Compatibility for js-controller 7
