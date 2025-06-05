@@ -25,16 +25,17 @@
   },
   "dependencies": {
     "@iobroker/adapter-core": "^3.1.6",
-    "@iobroker/testing": "^4.0.0",
     "moment": "^2.30.1",
     "tableify": "^1.1.1"
   },
   "devDependencies": {
-    "@iobroker/adapter-dev": "^1.2.0",
-    "@iobroker/testing":"^4.1.3",
-    "axios": ">=0.21.1",
+    "@alcalzone/release-script": "^3.8.0",
+    "@alcalzone/release-script-plugin-iobroker": "^3.7.2",
+    "@alcalzone/release-script-plugin-license": "^3.7.0",
+    "@alcalzone/release-script-plugin-manual-review": "^3.7.0",
+    "@iobroker/adapter-dev": "^1.4.0",
+    "@iobroker/testing": "^5.0.4",
     "chai": "^4.2.0",
-    "gulp": "^5.0.0",
     "mocha": "^10.1.0"
   },
   "main": "main.js",
@@ -48,11 +49,15 @@
     "LICENSE"
   ],
   "scripts": {
-    "test": "npm run test:package && npm run test:unit",
+    "test:js": "mocha --config test/mocharc.custom.json \"{!(node_modules|test)/**/*.test.js,*.test.js,test/**/test!(PackageFiles|Startup).js}\"",
     "test:package": "mocha test/package --exit",
-    "test:unit": "mocha test/unit --exit",
     "test:integration": "mocha test/integration --exit",
-    "translate": "translate-adapter"
+    "test": "npm run test:js && npm run test:package",
+    "check": "tsc --noEmit -p tsconfig.check.json",
+    "lint": "eslint -c eslint.config.mjs .",
+    "translate": "translate-adapter",
+    "release": "release-script"
+
   },
   "bugs": {
     "url": "https://github.com/iobroker-community-adapters/ioBroker.countdown/issues"
