@@ -1,41 +1,33 @@
 {
   "name": "iobroker.countdown",
   "version": "2.3.0",
-  "engines": {
-    "node": ">=18.0.0"
-  },
-  "description": "Countdown",
-  "main": "main.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jack-blackson/ioBroker.countdown"
-  },
+  "description": "Countdown adapter for ioBroker",
   "author": {
     "name": "jack_blackson",
     "email": "blacksonj7@gmail.com"
   },
-  "keywords": [
-    "Countdown",
-    "countdown",
-    "ioBroker"
+  "contributors": [
+    "iobroker-community-adapters <iobroker-community-adapters@gmx.de>",
+    "mcm1957 <iobroker-community-adapters@gmx.de>"
   ],
+  "homepage": "https://github.com/iobroker-community-adapters/ioBroker.countdown",
   "license": "MIT",
-  "homepage": "https://github.com/jack-blackson/ioBroker.countdown",
-  "bugs": {
-    "url": "https://github.com/jack-blackson/ioBroker.countdown/issues"
+  "keywords": [
+    "ioBroker",
+    "countdown"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iobroker-community-adapters/ioBroker.countdown"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   },
   "dependencies": {
     "@iobroker/adapter-core": "^3.1.6",
     "@iobroker/testing": "^4.0.0",
     "moment": "^2.30.1",
     "tableify": "^1.1.1"
-  },
-  "scripts": {
-    "test": "npm run test:package && npm run test:unit",
-    "test:package": "mocha test/package --exit",
-    "test:unit": "mocha test/unit --exit",
-    "test:integration": "mocha test/integration --exit",
-    "translate": "translate-adapter"
   },
   "devDependencies": {
     "@iobroker/adapter-dev": "^1.2.0",
@@ -44,6 +36,26 @@
     "chai": "^4.2.0",
     "gulp": "^5.0.0",
     "mocha": "^10.1.0"
+  },
+  "main": "main.js",
+  "files": [
+    "admin{,/!(src)/**}/!(tsconfig|tsconfig.*|.eslintrc).{json,json5}",
+    "admin{,/!(src)/**}/*.{html,css,png,svg,jpg,js}",
+    "build/",
+    "i18n/",
+    "www/",
+    "io-package.json",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "npm run test:package && npm run test:unit",
+    "test:package": "mocha test/package --exit",
+    "test:unit": "mocha test/unit --exit",
+    "test:integration": "mocha test/integration --exit",
+    "translate": "translate-adapter"
+  },
+  "bugs": {
+    "url": "https://github.com/iobroker-community-adapters/ioBroker.countdown/issues"
   },
   "readmeFilename": "README.md"
 }

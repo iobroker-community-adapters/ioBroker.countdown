@@ -109,39 +109,44 @@
             "zh-cn": "倒计时适配器"
         },
         "authors": [
-            "Jack <blacksonj7@gmail.com>"
+            "Jack <blacksonj7@gmail.com>",
+            "mcm1957 <iobroker-community-adapters@gmx.de>",
+            "iobroker-community-adapters <iobroker-community-adapters@gmx.de>"
+        ],
+        "keywords": [
+            "countdown"
         ],
         "licenseInformation": {
             "license": "MIT",
             "type": "free"
           },
         "platform": "Javascript/Node.js",
+        "icon": "countdown.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.countdown/master/admin/countdown.png",
+        "readme": "https://github.com/iobroker-community-adapters/ioBroker.countdown/blob/master/README.md",
+        "loglevel": "info",
+        "tier": 2,
         "mode": "daemon",
+        "type": "misc-data",
+        "compact": true,
+        "connectionType": "local",
+        "dataSource": "push",
         "messagebox": true,
         "adminUI": {
             "config": "materialize",
             "tab": "materialize"
         },
-        "enabled": true,
-        "compact": true,
         "dependencies": [
             {
-                "js-controller": ">=5.0.19"
+                "js-controller": ">=6.0.11"
             }
         ],
-        "readme": "https://github.com/jack-blackson/ioBroker.countdown/blob/master/README.md",
-        "loglevel": "info",
-        "keywords": [
-            "countdown"
+        "globalDependencies": [
+            {
+                "admin": ">=6.17.14"
+            }
         ],
-        "icon": "countdown.png",
-        "materialize": true,
-        "extIcon": "https://raw.githubusercontent.com/jack-blackson/ioBroker.countdown/master/admin/countdown.png",
-        "type": "misc-data",
-        "singletonHost": false,
-        "connectionType": "local",
-        "dataSource": "push",
-        "tier": 2,
         "plugins": {
             "sentry": {
                 "dsn": "https://ab85ff2e667843a2bd205a1c52ee80f8@sentry.iobroker.net/125"
