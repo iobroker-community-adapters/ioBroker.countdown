@@ -39,9 +39,10 @@ This adapter would not have been possible without the great work of @inbux (http
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### 3.0.0-alpha.1 (2025-06-05)
+### **WORK IN PROGRESS**
 * (mcm1957) Adapter has been migrated to iobroker-community-adapters organisation.
 * (mcm1957) Adapter requires node.js 20, js-controller 6.01 and admin 7.4.10 now.
+* (mcm1957) @iobroker/eslint-config has been added and linter error have been fixed.
 * (mcm1957) Dependencies have been updated.
 
 ### 2.3.0 (2024-09-20) 
