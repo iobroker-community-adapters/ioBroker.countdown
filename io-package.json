@@ -183,7 +183,6 @@
       "_id": "setup",
       "type": "device",
       "common": {
-        "role": "setup",
         "name": "Setup for Countdowns"
       },
       "native": {}
@@ -192,7 +191,6 @@
       "_id": "countdowns",
       "type": "device",
       "common": {
-        "role": "countdowns",
         "name": "Countdown Details"
       },
       "native": {}
