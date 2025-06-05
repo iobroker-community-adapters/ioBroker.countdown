@@ -1,6 +1,6 @@
 {
   "name": "iobroker.countdown",
-  "version": "2.3.0",
+  "version": "3.0.0-alpha.0",
   "description": "Countdown adapter for ioBroker",
   "author": {
     "name": "jack_blackson",
@@ -58,7 +58,6 @@
     "lint": "eslint -c eslint.config.mjs .",
     "translate": "translate-adapter",
     "release": "release-script"
-
   },
   "bugs": {
     "url": "https://github.com/iobroker-community-adapters/ioBroker.countdown/issues"

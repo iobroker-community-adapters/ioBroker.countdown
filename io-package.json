@@ -1,214 +1,227 @@
 {
-    "common": {
-        "name": "countdown",
-        "version": "2.3.0",
-        "news": {
-            "2.3.0": {
-                "en": "Compatibility for js-controller 7\n",
-                "de": "Kompatibilität für js-controller 7\n",
-                "ru": "Совместимость js-контроллера 7\n",
-                "pt": "Compatibilidade para js-controller 7\n",
-                "nl": "Compatibiliteit voor js-controller 7\n",
-                "fr": "Compatibilité pour js-controller 7\n",
-                "it": "Compatibilità per js-controller 7\n",
-                "es": "Compatibilidad para js-controller 7\n",
-                "pl": "Zgodność dla kontrolera js- 7\n",
-                "uk": "Сумісність для js-controller 7 хв\n",
-                "zh-cn": "Js 控制器的兼容性 页:1\n"
-            },
-            "2.2.1": {
-                "en": "Additional check to avoid not allowed signs in countdown name",
-                "de": "Zusätzliche Überprüfung nicht erlaubt Zeichen im Countdown-Namen zu vermeiden",
-                "ru": "Дополнительная проверка, чтобы избежать не разрешенных знаков в названии отсчета",
-                "pt": "Verificação adicional para evitar sinais não permitidos em nome de contagem regressiva",
-                "nl": "Additionele cheque vermijden niet toegestaan in aftelende naam",
-                "fr": "Contrôle supplémentaire pour éviter les signes interdits dans le nom de compte à rebours",
-                "it": "Controllo aggiuntivo per evitare segni non consentiti nel nome conto alla rovescia",
-                "es": "Verificación adicional para evitar signos no permitidos en nombre de cuenta atrás",
-                "pl": "Dodatkowy krok w celu uniknięcia zakazu posiadania znaków",
-                "uk": "Додатковий контроль, щоб уникнути не дозволених знаків у назві",
-                "zh-cn": "避免以计值名义不准迹象的更多检查"
-            },
-            "2.2.0": {
-                "en": "Added ability to maintain, adjust and delete countdowns in adapter settings",
-                "de": "Zusätzliche Fähigkeit, Countdowns in Adaptereinstellungen zu pflegen, anzupassen und zu löschen",
-                "ru": "Добавлена возможность поддерживать, регулировать и удалять отсчеты в настройках адаптера",
-                "pt": "Adicionado capacidade de manter, ajustar e excluir contagem regressiva em configurações do adaptador",
-                "nl": "Vermogen toegevoegd om te handhaven en aftellen in adapter settings",
-                "fr": "Capacité supplémentaire de maintenir, régler et supprimer les compteurs dans les réglages d'adaptateur",
-                "it": "Aggiunta la capacità di mantenere, regolare ed eliminare i conto alla rovescia nelle impostazioni dell'adattatore",
-                "es": "Posibilidad agregada de mantener, ajustar y eliminar recuentos en la configuración del adaptador",
-                "pl": "Zdolność do utrzymania, dostosowywania i usuwania liczb w ustawieniach adapterów",
-                "uk": "Додано можливість підтримки, налаштування та видалення відліків у налаштуваннях адаптера",
-                "zh-cn": "增加在适应环境中保持、调整和删除计值的能力"
-            },
-            "2.1.0": {
-                "en": "Ability to use the countdown \"backwards\" - e.g. for calculating age of a baby",
-                "de": "Fähigkeit, den Countdown rückwärts zu verwenden - z.B. zur Berechnung des Alters eines Babys",
-                "ru": "Возможность использования обратного отсчета - например для расчета возраста ребенка",
-                "pt": "Capacidade de usar a contagem regressiva para trás - por exemplo, para calcular a idade de um bebê",
-                "nl": "Abiliteit om de aftelsom te gebruiken. E.G. voor het berekenen van leeftijd van een baby",
-                "fr": "Possibilité d'utiliser le compte à rebours - p.ex. pour calculer l'âge d'un bébé",
-                "it": "Capacità di utilizzare il conto alla rovescia all'indietro - ad esempio per calcolare l'età di un bambino",
-                "es": "Capacidad para utilizar la cuenta atrás - por ejemplo para calcular la edad de un bebé",
-                "pl": "Możliwość używania odliczania do tyłu – np. do obliczania wieku dziecka",
-                "uk": "Можливість використовувати відлік назад - наприклад для розрахунку віку дитини",
-                "zh-cn": "A. 使用分娩后的可能性-例如计算婴儿年龄"
-            },
-            "2.0.1": {
-                "en": "Added objects for total number of months and years",
-                "de": "Objekte für die Gesamtzahl der Monate und Jahre hinzugefügt",
-                "ru": "Добавлены объекты на общее количество месяцев и лет",
-                "pt": "Objetos adicionados para o número total de meses e anos",
-                "nl": "Voeg objecten toe voor totale aantal maanden en jaren",
-                "fr": "Ajout d'objets pour le nombre total de mois et d'années",
-                "it": "Oggetti aggiunti per numero totale di mesi e anni",
-                "es": "Objetos añadidos para el número total de meses y años",
-                "pl": "Zamknięte przedmioty przez cały rok i rok",
-                "uk": "Додано об'єкти на загальну кількість місяців і років",
-                "zh-cn": "增加数月和年数的物体"
-            },
-            "2.0.0": {
-                "en": "Reworked adapter",
-                "de": "Reworked Adapter",
-                "ru": "Переработанный адаптер",
-                "pt": "Adaptador retrabalhado",
-                "nl": "Rework adapter",
-                "fr": "Adaptateur retravaillé",
-                "it": "Adattatore di lavoro",
-                "es": "Adaptador reforzado",
-                "pl": "Rework adapter",
-                "uk": "Перероблений адаптер",
-                "zh-cn": "重新调整适应者"
-            }
-        },
-        "titleLang": {
-            "en": "Countdown",
-            "de": "Countdown",
-            "ru": "обратный отсчет",
-            "pt": "Contagem regressiva",
-            "nl": "Countdown",
-            "fr": "Compte à rebours",
-            "it": "Conto alla rovescia",
-            "es": "cuenta regresiva",
-            "pl": "Odliczanie",
-            "uk": "Відправити",
-            "zh-cn": "倒数"
-        },
-        "desc": {
-            "en": "Countdown Adapter",
-            "de": "Countdown Adapter",
-            "ru": "Адаптер обратного отсчета",
-            "pt": "Adaptador de Contagem Regressiva",
-            "nl": "Afteladapter",
-            "fr": "Adaptateur compte à rebours",
-            "it": "Conto alla rovescia",
-            "es": "Adaptador de cuenta regresiva",
-            "pl": "Adapter do odliczania",
-            "uk": "Відлік адаптера",
-            "zh-cn": "倒计时适配器"
-        },
-        "authors": [
-            "Jack <blacksonj7@gmail.com>",
-            "mcm1957 <iobroker-community-adapters@gmx.de>",
-            "iobroker-community-adapters <iobroker-community-adapters@gmx.de>"
-        ],
-        "keywords": [
-            "countdown"
-        ],
-        "licenseInformation": {
-            "license": "MIT",
-            "type": "free"
-          },
-        "platform": "Javascript/Node.js",
-        "icon": "countdown.png",
-        "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.countdown/master/admin/countdown.png",
-        "readme": "https://github.com/iobroker-community-adapters/ioBroker.countdown/blob/master/README.md",
-        "loglevel": "info",
-        "tier": 2,
-        "mode": "daemon",
-        "type": "misc-data",
-        "compact": true,
-        "connectionType": "local",
-        "dataSource": "push",
-        "messagebox": true,
-        "adminUI": {
-            "config": "materialize",
-            "tab": "materialize"
-        },
-        "dependencies": [
-            {
-                "js-controller": ">=6.0.11"
-            }
-        ],
-        "globalDependencies": [
-            {
-                "admin": ">=7.4.10"
-            }
-        ],
-        "plugins": {
-            "sentry": {
-                "dsn": "https://ab85ff2e667843a2bd205a1c52ee80f8@sentry.iobroker.net/125"
-            }
-        }
+  "common": {
+    "name": "countdown",
+    "version": "3.0.0-alpha.0",
+    "news": {
+      "3.0.0-alpha.0": {
+        "en": "Adapter has been migrated to iobroker-community-adapters organisation.\nAdapter requires node.js 20, js-controller 6.01 and admin 7.4.10 now.\nDependencies have been updated.",
+        "de": "Adapter wurde auf die Organisation von iobroker-community-Adaptern migriert.\nAdapter erfordert jetzt node.js 20, js-controller 6.01 und admin 7.4.10.\nAbhängigkeiten wurden aktualisiert.",
+        "ru": "Адаптер был перемещен в организацию адаптации сообщества iobroker.\nАдаптер требует node.js 20, js-контроллер 6.01 и админ 7.4.10.\nЗависимости были обновлены.",
+        "pt": "Adapter foi migrado para a organização iobroker-community-adapters.\nAdaptador requer node.js 20, js-controller 6.01 e admin 7.4.10 agora.\nAs dependências foram atualizadas.",
+        "nl": "Adapter is gemigreerd naar iobroker-community-adapters organisatie.\nAdapter vereist node.js 20, js-controller 6.01 en admin 7.4.10 nu.\nAfhankelijkheden zijn bijgewerkt.",
+        "fr": "L'adaptateur a été transféré vers l'organisation iobroker-community-adapters.\nAdaptateur nécessite node.js 20, js-controller 6.01 et admin 7.4.10 maintenant.\nLes dépendances ont été actualisées.",
+        "it": "L'adattatore è stato migrato all'organizzazione di hobroker-community-adapters.\nAdattatore richiede node.js 20, js-controller 6.01 e admin 7.4.10 ora.\nLe dipendenze sono state aggiornate.",
+        "es": "El adaptador ha sido migrado a la organización de ibroker-community-adapters.\nAdaptador requiere node.js 20, js-controller 6.01 y admin 7.4.10 ahora.\nSe han actualizado las dependencias.",
+        "pl": "Adapter został przeniesiony do organizacji adapterów iobroker- community.\nAdapter wymaga node.js 20, kontroler js- 6.01 i admin 7.4.10 teraz.\nZaktualizowano zależność.",
+        "uk": "Перехідник мігрований до організації iobroker-community-adapters.\nАдаптер вимагає node.js 20, js-controller 6.01 і admin 7.4.10 тепер.\nОновлено залежність.",
+        "zh-cn": "适应者已迁移到职业经纪人-社区适应者组织.\n适配器需要节点20,js控制器6.01和现在的admin 7.4.10.\n附属关系已经更新."
+      },
+      "2.3.0": {
+        "en": "Compatibility for js-controller 7\n",
+        "de": "Kompatibilität für js-controller 7\n",
+        "ru": "Совместимость js-контроллера 7\n",
+        "pt": "Compatibilidade para js-controller 7\n",
+        "nl": "Compatibiliteit voor js-controller 7\n",
+        "fr": "Compatibilité pour js-controller 7\n",
+        "it": "Compatibilità per js-controller 7\n",
+        "es": "Compatibilidad para js-controller 7\n",
+        "pl": "Zgodność dla kontrolera js- 7\n",
+        "uk": "Сумісність для js-controller 7 хв\n",
+        "zh-cn": "Js 控制器的兼容性 页:1\n"
+      },
+      "2.2.1": {
+        "en": "Additional check to avoid not allowed signs in countdown name",
+        "de": "Zusätzliche Überprüfung nicht erlaubt Zeichen im Countdown-Namen zu vermeiden",
+        "ru": "Дополнительная проверка, чтобы избежать не разрешенных знаков в названии отсчета",
+        "pt": "Verificação adicional para evitar sinais não permitidos em nome de contagem regressiva",
+        "nl": "Additionele cheque vermijden niet toegestaan in aftelende naam",
+        "fr": "Contrôle supplémentaire pour éviter les signes interdits dans le nom de compte à rebours",
+        "it": "Controllo aggiuntivo per evitare segni non consentiti nel nome conto alla rovescia",
+        "es": "Verificación adicional para evitar signos no permitidos en nombre de cuenta atrás",
+        "pl": "Dodatkowy krok w celu uniknięcia zakazu posiadania znaków",
+        "uk": "Додатковий контроль, щоб уникнути не дозволених знаків у назві",
+        "zh-cn": "避免以计值名义不准迹象的更多检查"
+      },
+      "2.2.0": {
+        "en": "Added ability to maintain, adjust and delete countdowns in adapter settings",
+        "de": "Zusätzliche Fähigkeit, Countdowns in Adaptereinstellungen zu pflegen, anzupassen und zu löschen",
+        "ru": "Добавлена возможность поддерживать, регулировать и удалять отсчеты в настройках адаптера",
+        "pt": "Adicionado capacidade de manter, ajustar e excluir contagem regressiva em configurações do adaptador",
+        "nl": "Vermogen toegevoegd om te handhaven en aftellen in adapter settings",
+        "fr": "Capacité supplémentaire de maintenir, régler et supprimer les compteurs dans les réglages d'adaptateur",
+        "it": "Aggiunta la capacità di mantenere, regolare ed eliminare i conto alla rovescia nelle impostazioni dell'adattatore",
+        "es": "Posibilidad agregada de mantener, ajustar y eliminar recuentos en la configuración del adaptador",
+        "pl": "Zdolność do utrzymania, dostosowywania i usuwania liczb w ustawieniach adapterów",
+        "uk": "Додано можливість підтримки, налаштування та видалення відліків у налаштуваннях адаптера",
+        "zh-cn": "增加在适应环境中保持、调整和删除计值的能力"
+      },
+      "2.1.0": {
+        "en": "Ability to use the countdown \"backwards\" - e.g. for calculating age of a baby",
+        "de": "Fähigkeit, den Countdown rückwärts zu verwenden - z.B. zur Berechnung des Alters eines Babys",
+        "ru": "Возможность использования обратного отсчета - например для расчета возраста ребенка",
+        "pt": "Capacidade de usar a contagem regressiva para trás - por exemplo, para calcular a idade de um bebê",
+        "nl": "Abiliteit om de aftelsom te gebruiken. E.G. voor het berekenen van leeftijd van een baby",
+        "fr": "Possibilité d'utiliser le compte à rebours - p.ex. pour calculer l'âge d'un bébé",
+        "it": "Capacità di utilizzare il conto alla rovescia all'indietro - ad esempio per calcolare l'età di un bambino",
+        "es": "Capacidad para utilizar la cuenta atrás - por ejemplo para calcular la edad de un bebé",
+        "pl": "Możliwość używania odliczania do tyłu – np. do obliczania wieku dziecka",
+        "uk": "Можливість використовувати відлік назад - наприклад для розрахунку віку дитини",
+        "zh-cn": "A. 使用分娩后的可能性-例如计算婴儿年龄"
+      },
+      "2.0.1": {
+        "en": "Added objects for total number of months and years",
+        "de": "Objekte für die Gesamtzahl der Monate und Jahre hinzugefügt",
+        "ru": "Добавлены объекты на общее количество месяцев и лет",
+        "pt": "Objetos adicionados para o número total de meses e anos",
+        "nl": "Voeg objecten toe voor totale aantal maanden en jaren",
+        "fr": "Ajout d'objets pour le nombre total de mois et d'années",
+        "it": "Oggetti aggiunti per numero totale di mesi e anni",
+        "es": "Objetos añadidos para el número total de meses y años",
+        "pl": "Zamknięte przedmioty przez cały rok i rok",
+        "uk": "Додано об'єкти на загальну кількість місяців і років",
+        "zh-cn": "增加数月和年数的物体"
+      },
+      "2.0.0": {
+        "en": "Reworked adapter",
+        "de": "Reworked Adapter",
+        "ru": "Переработанный адаптер",
+        "pt": "Adaptador retrabalhado",
+        "nl": "Rework adapter",
+        "fr": "Adaptateur retravaillé",
+        "it": "Adattatore di lavoro",
+        "es": "Adaptador reforzado",
+        "pl": "Rework adapter",
+        "uk": "Перероблений адаптер",
+        "zh-cn": "重新调整适应者"
+      }
     },
-    "native": {
-        "interval": 120000,
-        "autodelete": false,
-        "dateformat": "DD.MM.YYYY HH:MM",
-        "inWordsShort": false,
-        "inWordsLong": true,
-        "totalNoOfDays": false,
-        "totalNoOfHours": false,
-        "totalNoOfWeeks": false,
-        "endDate": true
+    "titleLang": {
+      "en": "Countdown",
+      "de": "Countdown",
+      "ru": "обратный отсчет",
+      "pt": "Contagem regressiva",
+      "nl": "Countdown",
+      "fr": "Compte à rebours",
+      "it": "Conto alla rovescia",
+      "es": "cuenta regresiva",
+      "pl": "Odliczanie",
+      "uk": "Відправити",
+      "zh-cn": "倒数"
     },
-    "objects": [],
-    "instanceObjects": [
-        {
-            "_id": "setup",
-            "type": "device",
-            "common": {
-                "role": "setup",
-                "name": "Setup for Countdowns"
-            },
-            "native": {}
-        },
-        {
-            "_id": "countdowns",
-            "type": "device",
-            "common": {
-                "role": "countdowns",
-                "name": "Countdown Details"
-            },
-            "native": {}
-        },
-        {
-            "_id": "jsonContent",
-            "type": "state",
-            "common": {
-                "name": "JSON Content",
-                "type": "string",
-                "role": "value",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "htmlContent",
-            "type": "state",
-            "common": {
-                "name": "HTML Content",
-                "type": "string",
-                "role": "value",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        }
-    ]
+    "desc": {
+      "en": "Countdown Adapter",
+      "de": "Countdown Adapter",
+      "ru": "Адаптер обратного отсчета",
+      "pt": "Adaptador de Contagem Regressiva",
+      "nl": "Afteladapter",
+      "fr": "Adaptateur compte à rebours",
+      "it": "Conto alla rovescia",
+      "es": "Adaptador de cuenta regresiva",
+      "pl": "Adapter do odliczania",
+      "uk": "Відлік адаптера",
+      "zh-cn": "倒计时适配器"
+    },
+    "authors": [
+      "Jack <blacksonj7@gmail.com>",
+      "mcm1957 <iobroker-community-adapters@gmx.de>",
+      "iobroker-community-adapters <iobroker-community-adapters@gmx.de>"
+    ],
+    "keywords": [
+      "countdown"
+    ],
+    "licenseInformation": {
+      "license": "MIT",
+      "type": "free"
+    },
+    "platform": "Javascript/Node.js",
+    "icon": "countdown.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.countdown/master/admin/countdown.png",
+    "readme": "https://github.com/iobroker-community-adapters/ioBroker.countdown/blob/master/README.md",
+    "loglevel": "info",
+    "tier": 2,
+    "mode": "daemon",
+    "type": "misc-data",
+    "compact": true,
+    "connectionType": "local",
+    "dataSource": "push",
+    "messagebox": true,
+    "adminUI": {
+      "config": "materialize",
+      "tab": "materialize"
+    },
+    "dependencies": [
+      {
+        "js-controller": ">=6.0.11"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=7.4.10"
+      }
+    ],
+    "plugins": {
+      "sentry": {
+        "dsn": "https://ab85ff2e667843a2bd205a1c52ee80f8@sentry.iobroker.net/125"
+      }
+    }
+  },
+  "native": {
+    "interval": 120000,
+    "autodelete": false,
+    "dateformat": "DD.MM.YYYY HH:MM",
+    "inWordsShort": false,
+    "inWordsLong": true,
+    "totalNoOfDays": false,
+    "totalNoOfHours": false,
+    "totalNoOfWeeks": false,
+    "endDate": true
+  },
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "setup",
+      "type": "device",
+      "common": {
+        "role": "setup",
+        "name": "Setup for Countdowns"
+      },
+      "native": {}
+    },
+    {
+      "_id": "countdowns",
+      "type": "device",
+      "common": {
+        "role": "countdowns",
+        "name": "Countdown Details"
+      },
+      "native": {}
+    },
+    {
+      "_id": "jsonContent",
+      "type": "state",
+      "common": {
+        "name": "JSON Content",
+        "type": "string",
+        "role": "value",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "htmlContent",
+      "type": "state",
+      "common": {
+        "name": "HTML Content",
+        "type": "string",
+        "role": "value",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    }
+  ]
 }
