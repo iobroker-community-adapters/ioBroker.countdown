@@ -1,6 +1,6 @@
 {
   "name": "iobroker.countdown",
-  "version": "3.0.0-alpha.0",
+  "version": "3.0.0-alpha.1",
   "description": "Countdown adapter for ioBroker",
   "author": {
     "name": "jack_blackson",
