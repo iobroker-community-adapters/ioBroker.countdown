@@ -7,3 +7,5 @@ admin/i18n/*/flat.txt
 .DS_Store
 admin/.DS_Store
 .dev-server/
+#ignore .commitinfo created by ioBroker release script
+.commitinfo
