@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "countdown",
-    "version": "3.0.0",
+    "version": "3.1.0",
     "news": {
+      "3.1.0": {
+        "en": "Added option to sort countdowns by date in HTML and JSON output.",
+        "de": "Option hinzugefügt, um Countdowns nach Datum in HTML- und JSON-Ausgabe zu sortieren.",
+        "ru": "Добавлена возможность сортировки обратных отсчётов по дате в HTML и JSON.",
+        "pt": "Adicionada opção para ordenar contagens regressivas por data na saída HTML e JSON.",
+        "nl": "Optie toegevoegd om aftellingen op datum te sorteren in HTML- en JSON-uitvoer.",
+        "fr": "Ajout d'une option pour trier les comptes à rebours par date dans la sortie HTML et JSON.",
+        "it": "Aggiunta opzione per ordinare i conti alla rovescia per data nell'output HTML e JSON.",
+        "es": "Añadida opción para ordenar cuentas regresivas por fecha en la salida HTML y JSON.",
+        "pl": "Dodano opcję sortowania odliczań według daty w wyjściu HTML i JSON.",
+        "uk": "Додано опцію сортування зворотних відліків за датою у виводі HTML та JSON.",
+        "zh-cn": "添加了按日期排序倒计时的选项（HTML和JSON输出）。"
+      },
       "3.0.0": {
         "en": "Adapter has been migrated to iobroker-community-adapters organisation.\nAdapter requires node.js 20, js-controller 6.0.11 and admin 7.4.10 now.\n@iobroker/eslint-config has been added and linter error have been fixed.\nDependencies have been updated.",
         "de": "Adapter wurde in die iobroker-community-adapters Organisation migriert.\nAdapter erfordert jetzt node.js 20, js-controller 6.0.11 und admin 7.4.10.\n@iobroker/eslint-config wurde hinzugefügt und Linterfehler wurden behoben.\nAbhängigkeiten wurden aktualisiert.",
@@ -136,7 +149,8 @@
     "totalNoOfDays": false,
     "totalNoOfHours": false,
     "totalNoOfWeeks": false,
-    "endDate": true
+    "endDate": true,
+    "sortByDate": false
   },
   "objects": [],
   "instanceObjects": [

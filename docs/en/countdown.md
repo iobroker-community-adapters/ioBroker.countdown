@@ -6,6 +6,9 @@ The adapter provides you automatically a json table and as a HTML table. For the
 It is possible to either display the short text or the long text.
 ![Logo](admin/countdown_json.png)
 
+## Sorting countdowns by date
+By default, countdowns in the HTML and JSON output are displayed in the order they were created. If you want to sort them chronologically by their end date, you can enable the "Sort countdowns by date" option in the adapter settings. This will order all countdowns from earliest to latest date.
+
 ## How to add countdowns
 There are several ways to set up countdowns:
 

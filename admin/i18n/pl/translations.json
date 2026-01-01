@@ -17,5 +17,6 @@
     "time": "Czas",
     "totalNoOfDays": "Całkowita liczba dni",
     "totalNoOfHours": "Całkowita liczba godzin",
-    "totalNoOfWeeks": "Całkowita liczba tygodni"
+    "totalNoOfWeeks": "Całkowita liczba tygodni",
+    "sortByDate": "Sortuj odliczania według daty"
 }

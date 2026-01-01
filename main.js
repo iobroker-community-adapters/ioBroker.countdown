@@ -1094,12 +1094,28 @@ async function loadValuesforTable() {
                     tempTable[`${translateObject.textWeeks} `] = totalWeeks.val;
                 }
 
+                // Always fetch endDate for sorting purposes
+                let endDate = await adapter.getStateAsync(`countdowns.${id1.common.name}.endDate`);
+                tempTable['_sortDate'] = endDate.val;
+
                 if (adapter.config.endDate) {
-                    let endDate = await adapter.getStateAsync(`countdowns.${id1.common.name}.endDate`);
                     tempTable[`${translateObject.headerDate} `] = endDate.val;
                 }
                 countdownData.push(tempTable);
             }
+
+            // Sort by date if enabled
+            if (adapter.config.sortByDate) {
+                countdownData.sort((a, b) => {
+                    const dateA = moment(a['_sortDate'], 'DD.MM.YYYY HH:mm');
+                    const dateB = moment(b['_sortDate'], 'DD.MM.YYYY HH:mm');
+                    return dateA.diff(dateB);
+                });
+            }
+
+            // Remove temporary sort field
+            countdownData.forEach(item => delete item['_sortDate']);
+
             resolve('done');
         });
     });

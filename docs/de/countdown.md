@@ -1,10 +1,13 @@
 # ioBroker.countdown
 
 ## Countdowns anzeigen
-Der Adapter stellt automatisch eine JSON-Tabelle und eine HTML-Tabelle zur Verfügung. Für JSON wähle das Widget „basic-table“ aus. Wähle für den HTML-Code „basic - string (unescaped)“ aus.
+Der Adapter stellt automatisch eine JSON-Tabelle und eine HTML-Tabelle zur Verfügung. Für JSON wähle das Widget „basic-table" aus. Wähle für den HTML-Code „basic - string (unescaped)" aus.
 
 Es ist möglich, entweder den Kurztext oder den Langtext anzuzeigen.
 ![Logo](admin/countdown_json.png)
+
+## Countdowns nach Datum sortieren
+Standardmäßig werden Countdowns in der HTML- und JSON-Ausgabe in der Reihenfolge ihrer Erstellung angezeigt. Wenn die Countdowns chronologisch nach ihrem Enddatum sortiert werden sollen, kann die Option „Countdowns nach Datum sortieren" in den Adaptereinstellungen aktiviert werden. Dadurch werden alle Countdowns vom frühesten bis zum spätesten Datum sortiert.
 
 ## Countdowns hinzufügen
 Es gibt verschiedene Möglichkeiten, Countdowns einzurichten:
