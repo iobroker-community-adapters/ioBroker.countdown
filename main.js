@@ -1096,9 +1096,11 @@ async function loadValuesforTable() {
 
                 // Always fetch endDate for sorting purposes
                 let endDate = await adapter.getStateAsync(`countdowns.${id1.common.name}.endDate`);
-                tempTable['_sortDate'] = endDate.val;
+                if (endDate && endDate.val) {
+                    tempTable['_sortDate'] = endDate.val;
+                }
 
-                if (adapter.config.endDate) {
+                if (adapter.config.endDate && endDate && endDate.val) {
                     tempTable[`${translateObject.headerDate} `] = endDate.val;
                 }
                 countdownData.push(tempTable);
@@ -1106,9 +1108,31 @@ async function loadValuesforTable() {
 
             // Sort by date if enabled
             if (adapter.config.sortByDate) {
+                // Determine the date format based on adapter configuration
+                let dateFormat;
+                switch (adapter.config.dateFormat) {
+                    case 'EuropeDot':
+                        dateFormat = 'DD.MM.YYYY HH:mm';
+                        break;
+                    case 'EuropeMinus':
+                        dateFormat = 'DD-MM-YYYY HH:mm';
+                        break;
+                    case 'USDot':
+                        dateFormat = 'MM.DD.YYYY HH:mm';
+                        break;
+                    case 'USMinuts':
+                        dateFormat = 'MM-DD-YYYY HH:mm';
+                        break;
+                    case 'YearFirst':
+                        dateFormat = 'YYYY-MM-DD HH:mm';
+                        break;
+                    default:
+                        dateFormat = 'DD.MM.YYYY HH:mm';
+                }
+
                 countdownData.sort((a, b) => {
-                    const dateA = moment(a['_sortDate'], 'DD.MM.YYYY HH:mm');
-                    const dateB = moment(b['_sortDate'], 'DD.MM.YYYY HH:mm');
+                    const dateA = moment(a['_sortDate'], dateFormat);
+                    const dateB = moment(b['_sortDate'], dateFormat);
                     return dateA.diff(dateB);
                 });
             }

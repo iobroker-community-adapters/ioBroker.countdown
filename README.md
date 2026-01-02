@@ -42,8 +42,7 @@ who created pre V3.x.x releases of this adapter.
 -->
 
 ### **WORK IN PROGRESS**
-
-### 3.1.0 (2026-01-01)
+- (copilot) Adapter requires admin >= 7.6.17 now
 - (R3dRuM) Added option to sort countdowns by date in HTML and JSON output
 
 ### 3.0.0 (2025-06-05)
