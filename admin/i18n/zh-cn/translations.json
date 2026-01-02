@@ -17,5 +17,6 @@
     "time": "时间",
     "totalNoOfDays": "总天数",
     "totalNoOfHours": "总小时数",
-    "totalNoOfWeeks": "总周数"
+    "totalNoOfWeeks": "总周数",
+    "sortByDate": "按日期排序倒计时"
 }

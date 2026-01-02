@@ -43,6 +43,7 @@ who created pre V3.x.x releases of this adapter.
 
 ### **WORK IN PROGRESS**
 - (copilot) Adapter requires admin >= 7.6.17 now
+- (R3dRuM) Added option to sort countdowns by date in HTML and JSON output
 
 ### 3.0.0 (2025-06-05)
 * (mcm1957) Adapter has been migrated to iobroker-community-adapters organisation.
