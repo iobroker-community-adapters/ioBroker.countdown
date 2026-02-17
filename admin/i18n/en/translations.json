@@ -18,5 +18,6 @@
     "totalNoOfDays": "Total number of days",
     "totalNoOfHours": "Total number of hours",
     "totalNoOfWeeks": "Total number of weeks",
-    "countdowns": "Countdowns"
+    "countdowns": "Countdowns",
+    "sortByDate": "Sort countdowns by date"
 }
