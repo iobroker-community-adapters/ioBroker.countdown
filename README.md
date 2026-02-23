@@ -40,6 +40,10 @@ who created pre V3.x.x releases of this adapter.
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**0
 -->
+
+### **WORK IN PROGRESS**
+- (R3dRuM) Added option to sort countdowns by date in HTML and JSON output
+
 ### 3.0.1 (2026-02-23)
 - (copilot) Adapter requires admin >= 7.7.22 now
 

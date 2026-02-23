@@ -149,7 +149,8 @@
     "totalNoOfDays": false,
     "totalNoOfHours": false,
     "totalNoOfWeeks": false,
-    "endDate": true
+    "endDate": true,
+    "sortByDate": false
   },
   "objects": [],
   "instanceObjects": [

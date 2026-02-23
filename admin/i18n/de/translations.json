@@ -17,5 +17,6 @@
     "time": "Zeit",
     "totalNoOfDays": "Gesamtanzahl Tage",
     "totalNoOfHours": "Gesamtanzahl Stunden",
-    "totalNoOfWeeks": "Gesamtanzahl Wochen"
+    "totalNoOfWeeks": "Gesamtanzahl Wochen",
+    "sortByDate": "Countdowns nach Datum sortieren"
 }

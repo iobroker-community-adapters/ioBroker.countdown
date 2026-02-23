@@ -17,5 +17,6 @@
     "time": "Tiempo",
     "totalNoOfDays": "Numero total de dias",
     "totalNoOfHours": "Numero total de horas",
-    "totalNoOfWeeks": "Número total de semanas"
+    "totalNoOfWeeks": "Número total de semanas",
+    "sortByDate": "Ordenar cuentas regresivas por fecha"
 }

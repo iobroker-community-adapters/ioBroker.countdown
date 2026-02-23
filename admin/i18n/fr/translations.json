@@ -17,5 +17,6 @@
     "time": "Temps",
     "totalNoOfDays": "Nombre total de jours",
     "totalNoOfHours": "Nombre total d'heures",
-    "totalNoOfWeeks": "Nombre total de semaines"
+    "totalNoOfWeeks": "Nombre total de semaines",
+    "sortByDate": "Trier les comptes à rebours par date"
 }

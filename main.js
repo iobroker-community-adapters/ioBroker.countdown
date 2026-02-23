@@ -1094,12 +1094,82 @@ async function loadValuesforTable() {
                     tempTable[`${translateObject.textWeeks} `] = totalWeeks.val;
                 }
 
-                if (adapter.config.endDate) {
-                    let endDate = await adapter.getStateAsync(`countdowns.${id1.common.name}.endDate`);
+                // Always fetch endDate for sorting purposes
+                let endDate = await adapter.getStateAsync(`countdowns.${id1.common.name}.endDate`);
+                if (endDate && endDate.val) {
+                    tempTable['_sortDate'] = endDate.val;
+                }
+
+                if (adapter.config.endDate && endDate && endDate.val) {
                     tempTable[`${translateObject.headerDate} `] = endDate.val;
                 }
                 countdownData.push(tempTable);
             }
+
+            // Sort by date if enabled
+            if (adapter.config.sortByDate) {
+                // Determine the date format based on adapter configuration
+                let dateFormat;
+                switch (adapter.config.dateFormat) {
+                    case 'EuropeDot':
+                        dateFormat = 'DD.MM.YYYY HH:mm';
+                        break;
+                    case 'EuropeMinus':
+                        dateFormat = 'DD-MM-YYYY HH:mm';
+                        break;
+                    case 'USDot':
+                        dateFormat = 'MM.DD.YYYY HH:mm';
+                        break;
+                    case 'USMinuts':
+                        dateFormat = 'MM-DD-YYYY HH:mm';
+                        break;
+                    case 'YearFirst':
+                        dateFormat = 'YYYY-MM-DD HH:mm';
+                        break;
+                    default:
+                        dateFormat = 'DD.MM.YYYY HH:mm';
+                }
+
+                countdownData.sort((a, b) => {
+                    const sortDateA = a['_sortDate'];
+                    const sortDateB = b['_sortDate'];
+
+                    // If both entries have no sort date, keep their relative order
+                    if (!sortDateA && !sortDateB) {
+                        return 0;
+                    }
+                    // Entries without a sort date are placed after those with a sort date
+                    if (!sortDateA) {
+                        return 1;
+                    }
+                    if (!sortDateB) {
+                        return -1;
+                    }
+
+                    const dateA = moment(sortDateA, dateFormat, true);
+                    const dateB = moment(sortDateB, dateFormat, true);
+
+                    const validA = dateA.isValid();
+                    const validB = dateB.isValid();
+
+                    // If both dates are invalid, treat them as equal
+                    if (!validA && !validB) {
+                        return 0;
+                    }
+                    // Invalid dates are placed after valid ones
+                    if (!validA) {
+                        return 1;
+                    }
+                    if (!validB) {
+                        return -1;
+                    }
+                    return dateA.diff(dateB);
+                });
+            }
+
+            // Remove temporary sort field
+            countdownData.forEach(item => delete item['_sortDate']);
+
             resolve('done');
         });
     });
