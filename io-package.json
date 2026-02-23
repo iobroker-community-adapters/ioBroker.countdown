@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "countdown",
-    "version": "3.0.1",
+    "version": "3.1.0",
     "news": {
+      "3.1.0": {
+        "en": "Added option to sort countdowns by date in HTML and JSON output",
+        "de": "Option hinzugefügt, um Countdowns nach Datum in HTML und JSON Ausgabe zu sortieren",
+        "ru": "Добавлена возможность сортировки обратных отсчетов по дате в выводах HTML и JSON",
+        "pt": "Adicionada opção para ordenar contagens por data em HTML e saída JSON",
+        "nl": "Toegevoegd optie om countdowns te sorteren op datum in HTML en JSON uitvoer",
+        "fr": "Ajout d'une option pour trier les comptes à rebours par date en sortie HTML et JSON",
+        "it": "Aggiunta opzione per ordinare conto alla rovescia per data in uscita HTML e JSON",
+        "es": "Opción agregada para ordenar cuentas por fecha en HTML y JSON salida",
+        "pl": "Dodano opcję sortowania odliczeń według daty w wyjściu HTML i JSON",
+        "uk": "Додано можливість сортування записів за датою в HTML та JSON",
+        "zh-cn": "在 HTML 和 JSON 输出中按日期排序倒计时的添加选项"
+      },
       "3.0.1": {
         "en": "Adapter requires admin >= 7.7.22 now",
         "de": "Adapter benötigt admin >= 7.7.22 jetzt",

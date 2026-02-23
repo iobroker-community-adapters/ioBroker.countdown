@@ -40,8 +40,7 @@ who created pre V3.x.x releases of this adapter.
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**0
 -->
-
-### **WORK IN PROGRESS**
+### 3.1.0 (2026-02-23)
 - (R3dRuM) Added option to sort countdowns by date in HTML and JSON output
 
 ### 3.0.1 (2026-02-23)
@@ -61,12 +60,6 @@ who created pre V3.x.x releases of this adapter.
 * (jack-blackson) Additional check to avoid not allowed signs in countdown name
 * (jack-blackson) Updated dependencies
 * (jack-blackson) Small adjustments in package files
-
-### 2.2.0 (2023-08-25) 
-* (jack-blackson) Added ability to maintain, adjust and delete countdowns in adapter settings
-* (jack-blackson) Bugfix with incorrect spaces as first character in "in words long" and "in words short"
-* (jack-blackson) Bugfix incorrect calculation totalYears
-* (bagsik) added "totalJSON" object in each countdown
 
 ## License
 The MIT License (MIT)
