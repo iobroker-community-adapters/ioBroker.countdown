@@ -1131,8 +1131,38 @@ async function loadValuesforTable() {
                 }
 
                 countdownData.sort((a, b) => {
-                    const dateA = moment(a['_sortDate'], dateFormat);
-                    const dateB = moment(b['_sortDate'], dateFormat);
+                    const sortDateA = a['_sortDate'];
+                    const sortDateB = b['_sortDate'];
+
+                    // If both entries have no sort date, keep their relative order
+                    if (!sortDateA && !sortDateB) {
+                        return 0;
+                    }
+                    // Entries without a sort date are placed after those with a sort date
+                    if (!sortDateA) {
+                        return 1;
+                    }
+                    if (!sortDateB) {
+                        return -1;
+                    }
+
+                    const dateA = moment(sortDateA, dateFormat, true);
+                    const dateB = moment(sortDateB, dateFormat, true);
+
+                    const validA = dateA.isValid();
+                    const validB = dateB.isValid();
+
+                    // If both dates are invalid, treat them as equal
+                    if (!validA && !validB) {
+                        return 0;
+                    }
+                    // Invalid dates are placed after valid ones
+                    if (!validA) {
+                        return 1;
+                    }
+                    if (!validB) {
+                        return -1;
+                    }
                     return dateA.diff(dateB);
                 });
             }
