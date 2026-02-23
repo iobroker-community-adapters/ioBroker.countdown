@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "countdown",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "news": {
+      "3.0.1": {
+        "en": "Adapter requires admin >= 7.7.22 now",
+        "de": "Adapter benötigt admin >= 7.7.22 jetzt",
+        "ru": "Адаптер требует администратора >= 7.7.22",
+        "pt": "Adaptador requer admin >= 7.7.22 agora",
+        "nl": "Adapter vereist admin < 7.7.22 nu",
+        "fr": "Adaptateur nécessite admin >= 7.7.22 maintenant",
+        "it": "Adattatore richiede admin >= 7.7.22 ora",
+        "es": "El adaptador requiere admin= 7.7.22 ahora",
+        "pl": "Adapter wymaga admin > = 7.7.22",
+        "uk": "Адаптер вимагає адмін >= 7.7.22 тепер",
+        "zh-cn": "适任者需要管理员 \\ 7.7.22 现在"
+      },
       "3.0.0": {
         "en": "Adapter has been migrated to iobroker-community-adapters organisation.\nAdapter requires node.js 20, js-controller 6.0.11 and admin 7.4.10 now.\n@iobroker/eslint-config has been added and linter error have been fixed.\nDependencies have been updated.",
         "de": "Adapter wurde in die iobroker-community-adapters Organisation migriert.\nAdapter erfordert jetzt node.js 20, js-controller 6.0.11 und admin 7.4.10.\n@iobroker/eslint-config wurde hinzugefügt und Linterfehler wurden behoben.\nAbhängigkeiten wurden aktualisiert.",
@@ -118,7 +131,7 @@
     ],
     "globalDependencies": [
       {
-        "admin": ">=7.6.17"
+        "admin": ">=7.7.22"
       }
     ],
     "plugins": {

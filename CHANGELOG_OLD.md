@@ -1,4 +1,8 @@
 # Older Changelogs
+## 2.1.0 (2023-07-22) 
+* (jack-blackson) Ability to use the countdown "backwards" - e.g. for calculating age of a baby
+* (jack-blackson) Adjustments for "in words" -> fixed year/years and adjusted which detail level is shown at which point of time
+
 ## 2.0.2 (2023-07-16) 
 * (jack-blackson) Bugfix month calculation
 
