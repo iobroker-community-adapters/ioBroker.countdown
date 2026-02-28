@@ -1,6 +1,6 @@
 # ioBroker Adapter Development with GitHub Copilot
 
-**Version:** 0.5.6  
+**Version:** 0.5.7  
 **Template Source:** https://github.com/DrozmotiX/ioBroker-Copilot-Instructions
 
 This file contains instructions and best practices for GitHub Copilot when working on ioBroker adapter development.
@@ -125,18 +125,19 @@ npm install --save-dev eslint @iobroker/eslint-config
 ```json
 {
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint --max-warnings 0 .",
     "lint:fix": "eslint . --fix"
   }
 }
 ```
 
 #### Best Practices
-1. ✅ Run ESLint before committing
+1. ✅ Run ESLint before committing — fix ALL warnings, not just errors
 2. ✅ Use `lint:fix` for auto-fixable issues
 3. ✅ Don't disable rules without documentation
 4. ✅ Lint all relevant files (main code, tests, build scripts)
 5. ✅ Keep `@iobroker/eslint-config` up to date
+6. ✅ **ESLint warnings are treated as errors in CI** (`--max-warnings 0`). The `lint` script above already includes this flag — run `npm run lint` to match CI behavior locally
 
 #### Common Issues
 - **Unused variables**: Remove or prefix with underscore (`_variable`)
@@ -495,7 +496,7 @@ Use JSON-Config format for modern ioBroker admin interfaces.
 
 ### Translation Management
 
-**CRITICAL:** Translation files must stay synchronized with `admin/jsonConfig.json`. Orphaned keys (translation entries without a corresponding key in `jsonConfig.json`) or missing translations cause UI issues and PR review delays.
+**CRITICAL:** Translation files must stay synchronized with `admin/jsonConfig.json`. Orphaned keys or missing translations cause UI issues and PR review delays.
 
 #### Overview
 - **Location:** `admin/i18n/{lang}/translations.json` for 11 languages (de, en, es, fr, it, nl, pl, pt, ru, uk, zh-cn)
@@ -671,7 +672,7 @@ Initial release
 
 #### GitHub Actions Best Practices
 
-**MUST use ioBroker official testing actions:**
+**Must use ioBroker official testing actions:**
 - `ioBroker/testing-action-check@v1` for lint and package validation
 - `ioBroker/testing-action-adapter@v1` for adapter tests
 - `ioBroker/testing-action-deploy@v1` for automated releases with Trusted Publishing (OIDC)
