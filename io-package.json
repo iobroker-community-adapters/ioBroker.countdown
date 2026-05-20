@@ -134,8 +134,7 @@
     "dataSource": "push",
     "messagebox": true,
     "adminUI": {
-      "config": "materialize",
-      "tab": "materialize"
+      "config": "json"
     },
     "dependencies": [
       {
