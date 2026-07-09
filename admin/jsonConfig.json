@@ -1,0 +1,168 @@
+{
+  "i18n": true,
+  "type": "tabs",
+  "items": {
+    "tab_settings": {
+      "type": "panel",
+      "label": "settings",
+      "items": {
+        "autodelete": {
+          "type": "checkbox",
+          "label": "autodelete",
+          "xs": 12,
+          "sm": 12,
+          "md": 6,
+          "lg": 6,
+          "xl": 4
+        },
+        "sortByDate": {
+          "type": "checkbox",
+          "label": "sortByDate",
+          "xs": 12,
+          "sm": 12,
+          "md": 6,
+          "lg": 6,
+          "xl": 4
+        },
+        "dateFormat": {
+          "type": "select",
+          "label": "dateFormat",
+          "options": [
+            {
+              "label": "DD.MM.YYYY HH:MM",
+              "value": "EuropeDot"
+            },
+            {
+              "label": "DD-MM-YYYY HH:MM",
+              "value": "EuropeMinus"
+            },
+            {
+              "label": "MM.DD.YYYY HH:MM",
+              "value": "USDot"
+            },
+            {
+              "label": "MM-DD-YYYY HH:MM",
+              "value": "USMinuts"
+            },
+            {
+              "label": "YYYY-MM-DD HH:MM",
+              "value": "YearFirst"
+            }
+          ],
+          "xs": 12,
+          "sm": 12,
+          "md": 6,
+          "lg": 6,
+          "xl": 4
+        },
+        "tablecontent": {
+          "type": "staticText",
+          "text": "tablecontent",
+          "newLine": true,
+          "xs": 12,
+          "sm": 12,
+          "md": 12,
+          "lg": 12,
+          "xl": 12
+        },
+        "inWordsShort": {
+          "type": "checkbox",
+          "label": "inWordsShort",
+          "xs": 12,
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 4
+        },
+        "inWordsLong": {
+          "type": "checkbox",
+          "label": "inWordsLong",
+          "xs": 12,
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 4
+        },
+        "totalNoOfDays": {
+          "type": "checkbox",
+          "label": "totalNoOfDays",
+          "xs": 12,
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 4
+        },
+        "totalNoOfHours": {
+          "type": "checkbox",
+          "label": "totalNoOfHours",
+          "xs": 12,
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 4
+        },
+        "totalNoOfWeeks": {
+          "type": "checkbox",
+          "label": "totalNoOfWeeks",
+          "xs": 12,
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 4
+        },
+        "endDate": {
+          "type": "checkbox",
+          "label": "endDate",
+          "xs": 12,
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 4
+        }
+      }
+    },
+    "tab_countdowns": {
+      "type": "panel",
+      "label": "countdowns",
+      "items": {
+        "countdownData": {
+          "type": "table",
+          "label": "countdowns",
+          "xs": 12,
+          "sm": 12,
+          "md": 12,
+          "lg": 12,
+          "xl": 12,
+          "items": [
+            {
+              "type": "text",
+              "attr": "countdownName",
+              "title": "name"
+            },
+            {
+              "type": "date",
+              "attr": "countdownDate",
+              "title": "date"
+            },
+            {
+              "type": "time",
+              "attr": "countdownTime",
+              "title": "time"
+            },
+            {
+              "type": "text",
+              "attr": "countdownRepeatCycle",
+              "title": "repeatColoumn",
+              "help": "RepeatPeriod"
+            },
+            {
+              "type": "checkbox",
+              "attr": "countdownCountUp",
+              "title": "countUp"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

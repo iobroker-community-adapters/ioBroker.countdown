@@ -42,6 +42,7 @@ who created pre V3.x.x releases of this adapter.
 -->
 ### **WORK IN PROGRESS**
 - (copilot) Adapter requires node.js >= 22 now
+- (copilot) **ENHANCED**: Migrated adapter admin configuration to jsonConfig with short-form i18n files
 
 ### 3.1.0 (2026-02-23)
 - (R3dRuM) Added option to sort countdowns by date in HTML and JSON output
