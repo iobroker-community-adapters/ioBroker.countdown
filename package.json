@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@iobroker/adapter-core": "^3.3.2",
-    "moment": "^2.30.1",
+    "moment": "^2.31.0",
     "tableify": "^1.1.1"
   },
   "devDependencies": {
